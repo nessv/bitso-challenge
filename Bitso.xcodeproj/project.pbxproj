@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		54A5D3522B72D4F800F88FB0 /* BitsoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */; };
-		54A5D3542B72D4F800F88FB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3532B72D4F800F88FB0 /* ContentView.swift */; };
+		54A5D3542B72D4F800F88FB0 /* ArtworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */; };
 		54A5D3562B72D4F900F88FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3552B72D4F900F88FB0 /* Assets.xcassets */; };
 		54A5D3592B72D4F900F88FB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3582B72D4F900F88FB0 /* Preview Assets.xcassets */; };
 		54A5D3632B72D4F900F88FB0 /* BitsoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3622B72D4F900F88FB0 /* BitsoTests.swift */; };
 		54A5D36D2B72D4F900F88FB0 /* BitsoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D36C2B72D4F900F88FB0 /* BitsoUITests.swift */; };
 		54A5D36F2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D36E2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift */; };
 		54A5D37F2B72D5E500F88FB0 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 54A5D37E2B72D5E500F88FB0 /* Factory */; };
+		54A5D3862B72D8B300F88FB0 /* ArtworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3852B72D8B300F88FB0 /* ArtworkData.swift */; };
+		54A5D3882B72D8E200F88FB0 /* ArtworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3872B72D8E200F88FB0 /* ArtworkService.swift */; };
+		54A5D38B2B72DA6D00F88FB0 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D38A2B72DA6D00F88FB0 /* DependencyContainer.swift */; };
+		54A5D3902B72DB3E00F88FB0 /* ArtworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D38F2B72DB3E00F88FB0 /* ArtworkListViewModel.swift */; };
+		54A5D3922B72EEEB00F88FB0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3912B72EEEB00F88FB0 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,7 @@
 /* Begin PBXFileReference section */
 		54A5D34E2B72D4F800F88FB0 /* Bitso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoApp.swift; sourceTree = "<group>"; };
-		54A5D3532B72D4F800F88FB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkListView.swift; sourceTree = "<group>"; };
 		54A5D3552B72D4F900F88FB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54A5D3582B72D4F900F88FB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		54A5D35E2B72D4F900F88FB0 /* BitsoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +50,11 @@
 		54A5D3682B72D4F900F88FB0 /* BitsoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A5D36C2B72D4F900F88FB0 /* BitsoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoUITests.swift; sourceTree = "<group>"; };
 		54A5D36E2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54A5D3852B72D8B300F88FB0 /* ArtworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkData.swift; sourceTree = "<group>"; };
+		54A5D3872B72D8E200F88FB0 /* ArtworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkService.swift; sourceTree = "<group>"; };
+		54A5D38A2B72DA6D00F88FB0 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		54A5D38F2B72DB3E00F88FB0 /* ArtworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkListViewModel.swift; sourceTree = "<group>"; };
+		54A5D3912B72EEEB00F88FB0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +106,11 @@
 		54A5D3502B72D4F800F88FB0 /* Bitso */ = {
 			isa = PBXGroup;
 			children = (
+				54A5D38C2B72DB1F00F88FB0 /* Screens */,
+				54A5D3832B72D8A100F88FB0 /* Service */,
+				54A5D3842B72D8A900F88FB0 /* Model */,
+				54A5D3892B72DA6100F88FB0 /* Util */,
 				54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */,
-				54A5D3532B72D4F800F88FB0 /* ContentView.swift */,
 				54A5D3552B72D4F900F88FB0 /* Assets.xcassets */,
 				54A5D3572B72D4F900F88FB0 /* Preview Content */,
 			);
@@ -127,6 +140,56 @@
 				54A5D36E2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift */,
 			);
 			path = BitsoUITests;
+			sourceTree = "<group>";
+		};
+		54A5D3832B72D8A100F88FB0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				54A5D3872B72D8E200F88FB0 /* ArtworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		54A5D3842B72D8A900F88FB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54A5D3852B72D8B300F88FB0 /* ArtworkData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54A5D3892B72DA6100F88FB0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				54A5D38A2B72DA6D00F88FB0 /* DependencyContainer.swift */,
+				54A5D3912B72EEEB00F88FB0 /* String+Extension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		54A5D38C2B72DB1F00F88FB0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				54A5D38E2B72DB3200F88FB0 /* Details */,
+				54A5D38D2B72DB2E00F88FB0 /* List */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		54A5D38D2B72DB2E00F88FB0 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */,
+				54A5D38F2B72DB3E00F88FB0 /* ArtworkListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		54A5D38E2B72DB3200F88FB0 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +328,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54A5D3542B72D4F800F88FB0 /* ContentView.swift in Sources */,
+				54A5D3862B72D8B300F88FB0 /* ArtworkData.swift in Sources */,
+				54A5D3922B72EEEB00F88FB0 /* String+Extension.swift in Sources */,
+				54A5D38B2B72DA6D00F88FB0 /* DependencyContainer.swift in Sources */,
+				54A5D3542B72D4F800F88FB0 /* ArtworkListView.swift in Sources */,
+				54A5D3902B72DB3E00F88FB0 /* ArtworkListViewModel.swift in Sources */,
+				54A5D3882B72D8E200F88FB0 /* ArtworkService.swift in Sources */,
 				54A5D3522B72D4F800F88FB0 /* BitsoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
