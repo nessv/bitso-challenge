@@ -14,6 +14,7 @@
 		54A5D3632B72D4F900F88FB0 /* BitsoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3622B72D4F900F88FB0 /* BitsoTests.swift */; };
 		54A5D36D2B72D4F900F88FB0 /* BitsoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D36C2B72D4F900F88FB0 /* BitsoUITests.swift */; };
 		54A5D36F2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D36E2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift */; };
+		54A5D37F2B72D5E500F88FB0 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 54A5D37E2B72D5E500F88FB0 /* Factory */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54A5D37F2B72D5E500F88FB0 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = Bitso;
+			packageProductDependencies = (
+				54A5D37E2B72D5E500F88FB0 /* Factory */,
+			);
 			productName = Bitso;
 			productReference = 54A5D34E2B72D4F800F88FB0 /* Bitso.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 54A5D3452B72D4F800F88FB0;
+			packageReferences = (
+				54A5D37D2B72D5E500F88FB0 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = 54A5D34F2B72D4F800F88FB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54A5D37D2B72D5E500F88FB0 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54A5D37E2B72D5E500F88FB0 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54A5D37D2B72D5E500F88FB0 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54A5D3462B72D4F800F88FB0 /* Project object */;
 }
