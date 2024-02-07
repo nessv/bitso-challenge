@@ -22,6 +22,11 @@
 		54A5D3922B72EEEB00F88FB0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3912B72EEEB00F88FB0 /* String+Extension.swift */; };
 		54A5D3952B73C9F700F88FB0 /* ArtworkTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3942B73C9F700F88FB0 /* ArtworkTile.swift */; };
 		54A5D3972B73CA9600F88FB0 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3962B73CA9600F88FB0 /* ViewModelProtocol.swift */; };
+		54A5D3A12B74228D00F88FB0 /* Futura Round Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D39D2B74228D00F88FB0 /* Futura Round Bold.ttf */; };
+		54A5D3A32B74228D00F88FB0 /* Futura Round.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D39F2B74228D00F88FB0 /* Futura Round.ttf */; };
+		54A5D3A42B74228D00F88FB0 /* Futura Round Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3A02B74228D00F88FB0 /* Futura Round Light.ttf */; };
+		54A5D3A72B74235C00F88FB0 /* Futura Round Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3A62B74235C00F88FB0 /* Futura Round Medium.ttf */; };
+		54A5D3A92B742D3600F88FB0 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3A82B742D3600F88FB0 /* Font+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,12 @@
 		54A5D3912B72EEEB00F88FB0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		54A5D3942B73C9F700F88FB0 /* ArtworkTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTile.swift; sourceTree = "<group>"; };
 		54A5D3962B73CA9600F88FB0 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		54A5D39D2B74228D00F88FB0 /* Futura Round Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Round Bold.ttf"; sourceTree = "<group>"; };
+		54A5D39F2B74228D00F88FB0 /* Futura Round.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Round.ttf"; sourceTree = "<group>"; };
+		54A5D3A02B74228D00F88FB0 /* Futura Round Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Round Light.ttf"; sourceTree = "<group>"; };
+		54A5D3A52B7422F700F88FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		54A5D3A62B74235C00F88FB0 /* Futura Round Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Round Medium.ttf"; sourceTree = "<group>"; };
+		54A5D3A82B742D3600F88FB0 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +121,8 @@
 		54A5D3502B72D4F800F88FB0 /* Bitso */ = {
 			isa = PBXGroup;
 			children = (
+				54A5D3A52B7422F700F88FB0 /* Info.plist */,
+				54A5D39C2B74227600F88FB0 /* Font */,
 				54A5D38C2B72DB1F00F88FB0 /* Screens */,
 				54A5D3832B72D8A100F88FB0 /* Service */,
 				54A5D3842B72D8A900F88FB0 /* Model */,
@@ -168,6 +181,7 @@
 				54A5D38A2B72DA6D00F88FB0 /* DependencyContainer.swift */,
 				54A5D3912B72EEEB00F88FB0 /* String+Extension.swift */,
 				54A5D3962B73CA9600F88FB0 /* ViewModelProtocol.swift */,
+				54A5D3A82B742D3600F88FB0 /* Font+Extension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -204,6 +218,17 @@
 				54A5D3942B73C9F700F88FB0 /* ArtworkTile.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		54A5D39C2B74227600F88FB0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				54A5D3A62B74235C00F88FB0 /* Futura Round Medium.ttf */,
+				54A5D39D2B74228D00F88FB0 /* Futura Round Bold.ttf */,
+				54A5D3A02B74228D00F88FB0 /* Futura Round Light.ttf */,
+				54A5D39F2B74228D00F88FB0 /* Futura Round.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +341,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54A5D3A12B74228D00F88FB0 /* Futura Round Bold.ttf in Resources */,
 				54A5D3592B72D4F900F88FB0 /* Preview Assets.xcassets in Resources */,
+				54A5D3A42B74228D00F88FB0 /* Futura Round Light.ttf in Resources */,
+				54A5D3A72B74235C00F88FB0 /* Futura Round Medium.ttf in Resources */,
+				54A5D3A32B74228D00F88FB0 /* Futura Round.ttf in Resources */,
 				54A5D3562B72D4F900F88FB0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +377,7 @@
 				54A5D3542B72D4F800F88FB0 /* ArtworkListView.swift in Sources */,
 				54A5D3952B73C9F700F88FB0 /* ArtworkTile.swift in Sources */,
 				54A5D3902B72DB3E00F88FB0 /* ArtworkListViewModel.swift in Sources */,
+				54A5D3A92B742D3600F88FB0 /* Font+Extension.swift in Sources */,
 				54A5D3882B72D8E200F88FB0 /* ArtworkService.swift in Sources */,
 				54A5D3522B72D4F800F88FB0 /* BitsoApp.swift in Sources */,
 				54A5D3972B73CA9600F88FB0 /* ViewModelProtocol.swift in Sources */,
@@ -517,6 +547,7 @@
 				DEVELOPMENT_TEAM = PD57CQ6SSE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bitso/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -546,6 +577,7 @@
 				DEVELOPMENT_TEAM = PD57CQ6SSE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bitso/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -18,15 +18,15 @@ struct ArtworkTile: View {
                 Rectangle()
                     .fill(Color.gray.opacity(0.2))
             }
-            .frame(width: 150, height: 150)
+            .frame(width: 100, height: 100)
             
             VStack(alignment: .leading, spacing: 4) {
                 Text(art.title)
-                    .lineLimit(3)
-                    .font(.headline)
+                    .lineLimit(2)
+                    .font(.custom(FuturaRound.bold.font, size: FontStyle.headline.size))
                 
                 Text(art.artist_title ?? "unknown")
-                    .font(.caption)
+                    .font(.custom(FuturaRound.light.font, size: FontStyle.subheadline.size))
                 
             }
             .padding()
@@ -37,7 +37,7 @@ struct ArtworkTile: View {
         .clipShape(.rect(cornerRadius: 10))
         .background {
             Rectangle()
-                .fill(Color.white)
+                .fill(.white)
                 .clipShape(.rect(cornerRadius: 10))
                 .shadow(radius: 6)
         }

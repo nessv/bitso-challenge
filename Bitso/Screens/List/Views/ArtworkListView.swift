@@ -10,12 +10,11 @@ import SwiftUI
 struct ArtworkListView: View {
     @StateObject var viewModel = ArtworkListViewModel()
     
-    static var tileSize: CGFloat { UIScreen.main.bounds.width / 2 }
-    
-    private let adaptiveColumn = [
-        GridItem(.flexible(maximum: tileSize)),
-        GridItem(.flexible(maximum: tileSize))
-    ]
+    init() {
+        // Necessary to apply the same font style to the navigation bar title
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(name: FuturaRound.bold.font, size: FontStyle.largeTitle.size) as Any]
+        UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(name: FuturaRound.medium.font, size: FontStyle.title3.size) as Any]
+    }
     
     var body: some View {
         NavigationStack {
