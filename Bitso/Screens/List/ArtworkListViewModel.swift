@@ -11,17 +11,10 @@ import Factory
 final class ArtworkListViewModel: ViewModel {
     @Injected(\.artworkService) private var service
     
-    enum Action {
-        case loadMoreArtwork
-        case refresh
-    }
+    enum Action { case loadMoreArtwork, refresh }
+    enum State { case initial, loading, loaded, error }
     
-    enum State {
-        case initial
-        case loading
-        case loaded
-        case error
-    }
+    private var currentPage = 1
     
     // MARK: Public
     @Published var artwork: ArtworkData = ArtworkData()
@@ -39,19 +32,14 @@ final class ArtworkListViewModel: ViewModel {
     // MARK: Private functions
     private func getArtwork() {
         Task {
-            let artworkData = try await service.getArtworksByPage(0)
+            await MainActor.run { state = .loading }
+            
+            let artworkData = try await service.getArtworksByPage(currentPage)
             
             await MainActor.run {
                 artwork = artworkData
+                state = .loaded
             }
         }
     }
-}
-
-protocol ViewModel: ObservableObject {
-    associatedtype Action
-    associatedtype State
-    
-    var state: State { get }
-    func send(action: Action)
 }

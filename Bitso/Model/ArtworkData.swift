@@ -20,8 +20,9 @@ struct Artwork: Codable {
     let id: Int
     let title: String
     let thumbnail: Thumbnail?
-    let artist_title: String
+    let artist_title: String?
     let description: String?
+    let image_id: String?
 }
 
 struct Thumbnail: Codable {
