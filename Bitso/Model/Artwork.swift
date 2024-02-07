@@ -7,23 +7,23 @@
 
 import Foundation
 
-struct ArtworkData: Codable {
+struct Artwork: Codable {
 //    var pagination: Pagination
-    var data: [Artwork] = []
+    var data: [Data] = []
+    
+    struct Data: Codable {
+        let id: Int
+        let title: String
+        let thumbnail: Thumbnail?
+        let artist_title: String?
+        let description: String?
+        let image_id: String?
+    }
 }
 
 //struct Pagination: Codable {
 //
 //}
-
-struct Artwork: Codable {
-    let id: Int
-    let title: String
-    let thumbnail: Thumbnail?
-    let artist_title: String?
-    let description: String?
-    let image_id: String?
-}
 
 struct Thumbnail: Codable {
     var lqip: String

@@ -15,7 +15,7 @@
 		54A5D36D2B72D4F900F88FB0 /* BitsoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D36C2B72D4F900F88FB0 /* BitsoUITests.swift */; };
 		54A5D36F2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D36E2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift */; };
 		54A5D37F2B72D5E500F88FB0 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 54A5D37E2B72D5E500F88FB0 /* Factory */; };
-		54A5D3862B72D8B300F88FB0 /* ArtworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3852B72D8B300F88FB0 /* ArtworkData.swift */; };
+		54A5D3862B72D8B300F88FB0 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3852B72D8B300F88FB0 /* Artwork.swift */; };
 		54A5D3882B72D8E200F88FB0 /* ArtworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3872B72D8E200F88FB0 /* ArtworkService.swift */; };
 		54A5D38B2B72DA6D00F88FB0 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D38A2B72DA6D00F88FB0 /* DependencyContainer.swift */; };
 		54A5D3902B72DB3E00F88FB0 /* ArtworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D38F2B72DB3E00F88FB0 /* ArtworkListViewModel.swift */; };
@@ -27,6 +27,7 @@
 		54A5D3A42B74228D00F88FB0 /* Futura Round Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3A02B74228D00F88FB0 /* Futura Round Light.ttf */; };
 		54A5D3A72B74235C00F88FB0 /* Futura Round Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3A62B74235C00F88FB0 /* Futura Round Medium.ttf */; };
 		54A5D3A92B742D3600F88FB0 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3A82B742D3600F88FB0 /* Font+Extension.swift */; };
+		54A5D3AB2B74328E00F88FB0 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3AA2B74328E00F88FB0 /* Artist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,7 @@
 		54A5D3682B72D4F900F88FB0 /* BitsoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A5D36C2B72D4F900F88FB0 /* BitsoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoUITests.swift; sourceTree = "<group>"; };
 		54A5D36E2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		54A5D3852B72D8B300F88FB0 /* ArtworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkData.swift; sourceTree = "<group>"; };
+		54A5D3852B72D8B300F88FB0 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		54A5D3872B72D8E200F88FB0 /* ArtworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkService.swift; sourceTree = "<group>"; };
 		54A5D38A2B72DA6D00F88FB0 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		54A5D38F2B72DB3E00F88FB0 /* ArtworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkListViewModel.swift; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		54A5D3A52B7422F700F88FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		54A5D3A62B74235C00F88FB0 /* Futura Round Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Round Medium.ttf"; sourceTree = "<group>"; };
 		54A5D3A82B742D3600F88FB0 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		54A5D3AA2B74328E00F88FB0 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +172,8 @@
 		54A5D3842B72D8A900F88FB0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				54A5D3852B72D8B300F88FB0 /* ArtworkData.swift */,
+				54A5D3852B72D8B300F88FB0 /* Artwork.swift */,
+				54A5D3AA2B74328E00F88FB0 /* Artist.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -371,7 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54A5D3862B72D8B300F88FB0 /* ArtworkData.swift in Sources */,
+				54A5D3862B72D8B300F88FB0 /* Artwork.swift in Sources */,
 				54A5D3922B72EEEB00F88FB0 /* String+Extension.swift in Sources */,
 				54A5D38B2B72DA6D00F88FB0 /* DependencyContainer.swift in Sources */,
 				54A5D3542B72D4F800F88FB0 /* ArtworkListView.swift in Sources */,
@@ -381,6 +384,7 @@
 				54A5D3882B72D8E200F88FB0 /* ArtworkService.swift in Sources */,
 				54A5D3522B72D4F800F88FB0 /* BitsoApp.swift in Sources */,
 				54A5D3972B73CA9600F88FB0 /* ViewModelProtocol.swift in Sources */,
+				54A5D3AB2B74328E00F88FB0 /* Artist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
