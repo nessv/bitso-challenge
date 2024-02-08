@@ -39,12 +39,18 @@ struct Pagination: Codable {
     let totalPages: Int
     let currentPage: Int
     
+    var nextPage: Int { currentPage + 1 }
+    
     enum CodingKeys: String, CodingKey {
         case total
         case limit
         case offset
         case totalPages = "total_pages"
         case currentPage = "current_page"
+    }
+    
+    static func initial() -> Pagination {
+        Pagination(total: 0, limit: 12, offset: 0, totalPages: 0, currentPage: 0)
     }
 }
 

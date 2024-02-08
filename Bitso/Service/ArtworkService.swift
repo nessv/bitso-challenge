@@ -14,12 +14,12 @@ enum NetworkError: Error {
 }
 
 private enum ArtworkApi {
-    case getArtworks
+    case getArtworks(_ page: Int)
     case getArtist(_ id: Int)
     
     var url: String {
         switch self {
-        case .getArtworks: return "https://api.artic.edu/api/v1/artworks"
+        case .getArtworks(let page): return "https://api.artic.edu/api/v1/artworks?fields=title,id,artist_title,description,image_id&page=\(page)"
         case .getArtist(let id): return "https://api.artic.edu/api/v1/artists/\(id)"
         }
     }
@@ -36,7 +36,7 @@ final class ArtworkServiceImpl: ArtworkService {
     }
     
     func getArtworksByPage(_ page: Int) async throws -> Artwork {
-        try await request(.getArtworks)
+        try await request(.getArtworks(page))
     }
     
     private func request<T: Decodable>(_ url: ArtworkApi) async throws -> T {

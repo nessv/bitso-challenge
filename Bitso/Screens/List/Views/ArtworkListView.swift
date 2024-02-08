@@ -20,9 +20,8 @@ struct ArtworkListView: View {
         NavigationStack {
             ZStack {
                 switch viewModel.state {
-                case .initial: VStack {}.onAppear { viewModel.send(action: .loadMoreArtwork) }
-                case .loading: ProgressView()
-                case .loaded: loadedView
+                case .initial: ProgressView().onAppear { viewModel.send(action: .loadMoreArtwork(.zero)) }
+                case .loaded, .loading: loadedView
                 case .error: EmptyView()
                 }
             }
@@ -36,12 +35,13 @@ struct ArtworkListView: View {
                 ForEach(viewModel.artwork.data, id: \.id) { art in
                     NavigationLink(destination: ArtworkDetailView(artwork: art)) {
                         ArtworkTile(art: art)
+                            .onAppear { viewModel.send(action: .loadMoreArtwork(art.id)) }
                     }
                 }
             }
             .padding(16)
         }
-        .refreshable {}
+        .refreshable { viewModel.send(action: .refresh) }
     }
 }
 
