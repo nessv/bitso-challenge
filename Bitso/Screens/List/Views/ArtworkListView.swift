@@ -33,7 +33,11 @@ struct ArtworkListView: View {
     private var loadedView: some View {
         ScrollView {
             LazyVStack(spacing: 16) {
-                ForEach(viewModel.artwork.data, id: \.id) { ArtworkTile(art: $0) }
+                ForEach(viewModel.artwork.data, id: \.id) { art in
+                    NavigationLink(destination: ArtworkDetailView(artwork: art)) {
+                        ArtworkTile(art: art)
+                    }
+                }
             }
             .padding(16)
         }

@@ -28,6 +28,8 @@
 		54A5D3A72B74235C00F88FB0 /* Futura Round Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3A62B74235C00F88FB0 /* Futura Round Medium.ttf */; };
 		54A5D3A92B742D3600F88FB0 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3A82B742D3600F88FB0 /* Font+Extension.swift */; };
 		54A5D3AB2B74328E00F88FB0 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3AA2B74328E00F88FB0 /* Artist.swift */; };
+		54A5D3B02B751D9300F88FB0 /* ArtworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3AF2B751D9300F88FB0 /* ArtworkDetailView.swift */; };
+		54A5D3B22B752BA400F88FB0 /* ArtworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3B12B752BA400F88FB0 /* ArtworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		54A5D3A62B74235C00F88FB0 /* Futura Round Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Round Medium.ttf"; sourceTree = "<group>"; };
 		54A5D3A82B742D3600F88FB0 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		54A5D3AA2B74328E00F88FB0 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		54A5D3AF2B751D9300F88FB0 /* ArtworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkDetailView.swift; sourceTree = "<group>"; };
+		54A5D3B12B752BA400F88FB0 /* ArtworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +214,8 @@
 		54A5D38E2B72DB3200F88FB0 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				54A5D3AF2B751D9300F88FB0 /* ArtworkDetailView.swift */,
+				54A5D3B12B752BA400F88FB0 /* ArtworkDetailViewModel.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -384,6 +390,8 @@
 				54A5D3882B72D8E200F88FB0 /* ArtworkService.swift in Sources */,
 				54A5D3522B72D4F800F88FB0 /* BitsoApp.swift in Sources */,
 				54A5D3972B73CA9600F88FB0 /* ViewModelProtocol.swift in Sources */,
+				54A5D3B22B752BA400F88FB0 /* ArtworkDetailViewModel.swift in Sources */,
+				54A5D3B02B751D9300F88FB0 /* ArtworkDetailView.swift in Sources */,
 				54A5D3AB2B74328E00F88FB0 /* Artist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

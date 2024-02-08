@@ -14,5 +14,15 @@ struct Artist: Codable {
         var id: Int
         var title: String
         var description: String?
+        var birthDate: Int?
+        var deathDate: Int?
+        
+        enum CodingKeys: String, CodingKey {
+            case id
+            case title
+            case description
+            case birthDate = "birth_date"
+            case deathDate = "death_date"
+        }
     }
 }

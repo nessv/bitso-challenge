@@ -8,7 +8,7 @@
 import Foundation
 
 struct Artwork: Codable {
-    var pagination: Pagination
+    var pagination: Pagination?
     var data: [Data] = []
     
     struct Data: Codable {
@@ -18,6 +18,7 @@ struct Artwork: Codable {
         let artistTitle: String?
         let description: String?
         let imageId: String?
+        let artistId: Int?
         
         enum CodingKeys: String, CodingKey {
             case id
@@ -26,6 +27,7 @@ struct Artwork: Codable {
             case artistTitle = "artist_title"
             case description
             case imageId = "image_id"
+            case artistId = "artist_id"
         }
     }
 }

@@ -24,11 +24,14 @@ struct ArtworkTile: View {
                 Text(art.title)
                     .lineLimit(2)
                     .font(.custom(FuturaRound.bold.font, size: FontStyle.headline.size))
+                    .multilineTextAlignment(.leading)
                 
                 Text(art.artistTitle ?? "unknown")
                     .font(.custom(FuturaRound.light.font, size: FontStyle.subheadline.size))
+                    .lineLimit(1)
                 
             }
+            .foregroundStyle(.black)
             .padding()
             
             Spacer()
