@@ -31,7 +31,7 @@ struct ArtworkTile: View {
                     .lineLimit(1)
                 
             }
-            .foregroundStyle(.black)
+            .foregroundStyle(Color.primary)
             .padding()
             
             Spacer()
@@ -40,9 +40,17 @@ struct ArtworkTile: View {
         .clipShape(.rect(cornerRadius: 10))
         .background {
             Rectangle()
-                .fill(.white)
+                .fill(.tileBackground)
                 .clipShape(.rect(cornerRadius: 10))
                 .shadow(radius: 6)
         }
     }
+}
+
+#Preview {
+    ArtworkTile(art: .init(id: 37281, title: "Chicago Stock Exchange Trading Room: Stencil",
+                           thumbnail: nil,
+                           artistTitle: "Adler & Sulivan, Architexts",
+                           description: "The Chicago Stock Exchange building was one of Dankmar Adler and Louis Sullivan’s most distinctive commercial projects. The centerpiece of this 13-story structure was the trading room—a dramatic, double-height space filled with Sullivan’s lush ornament and the multicolored, stenciled wall covering seen here. After an unsuccessful preservation battle in the late 1960s, the building was demolished, but the Art Institute was able to acquire the monumental entry arch, now located in a garden next to the Modern Wing.",
+                           imageId: "d8ca9156-1ae6-a96d-d478-28cea07a1964", artistId: 40566))
 }
