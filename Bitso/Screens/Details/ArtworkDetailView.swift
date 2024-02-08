@@ -34,10 +34,11 @@ struct ArtworkDetailView: View {
                 
                 
                 artistInfo
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
             }
             .padding(.horizontal, 24)
         }
-        .navigationTitle("Artwork")
+        .navigationTitle(viewModel.artwork.title)
         .onAppear { viewModel.send(action: .loadArtistInfo) }
     }
     
@@ -70,11 +71,28 @@ struct ArtworkDetailView: View {
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-        case .errorLoadingArtistInfo: Text("ERROR")
-            
-        case .artistInfoEmpty: Text("EMPTY")
-            
+        case .errorLoadingArtistInfo: artistErrorView
+        case .artistInfoEmpty: artistInfoEmpty
         }
+    }
+    
+    private var artistErrorView: some View {
+        VStack {
+            Text("There was an error getting the artist information")
+                .foregroundStyle(.red)
+            Button("Tap to try again") {
+                viewModel.send(action: .loadArtistInfo)
+            }
+        }
+        .font(.custom(FuturaRound.medium.font, size: FontStyle.body.size))
+    }
+    
+    private var artistInfoEmpty: some View {
+        VStack {
+            Text("There's no artist information available")
+                .foregroundStyle(.primary)
+        }
+        .font(.custom(FuturaRound.medium.font, size: FontStyle.body.size))
     }
 }
 

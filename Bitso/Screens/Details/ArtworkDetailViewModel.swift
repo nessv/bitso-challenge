@@ -29,6 +29,8 @@ final class ArtworkDetailViewModel: ViewModel {
     }
     
     private func requestArtistInfo() {
+        state = .loadingArtistInfo
+        
         Task {
             guard let id = artwork.artistId else {
                 await MainActor.run { state = .artistInfoEmpty }
