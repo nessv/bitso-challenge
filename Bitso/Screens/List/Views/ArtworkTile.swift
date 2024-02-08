@@ -12,7 +12,7 @@ struct ArtworkTile: View {
     
     var body: some View {
         HStack(alignment: .center) {
-            AsyncImage(url: URL(string: "https://www.artic.edu/iiif/2/\(art.image_id ?? "")/full/843,/0/default.jpg")) { image in
+            AsyncImage(url: URL(string: "https://www.artic.edu/iiif/2/\(art.imageId ?? "")/full/843,/0/default.jpg")) { image in
                 image.resizable()
             } placeholder: {
                 Rectangle()
@@ -25,7 +25,7 @@ struct ArtworkTile: View {
                     .lineLimit(2)
                     .font(.custom(FuturaRound.bold.font, size: FontStyle.headline.size))
                 
-                Text(art.artist_title ?? "unknown")
+                Text(art.artistTitle ?? "unknown")
                     .font(.custom(FuturaRound.light.font, size: FontStyle.subheadline.size))
                 
             }
