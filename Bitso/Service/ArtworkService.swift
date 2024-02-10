@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Factory
 
 enum NetworkError: Error {
     case unknownUrl
@@ -19,24 +20,47 @@ private enum ArtworkApi {
     
     var url: String {
         switch self {
-        case .getArtworks(let page): return "https://api.artic.edu/api/v1/artworks?fields=title,id,artist_title,description,image_id&page=\(page)"
+        case .getArtworks(let page): return "https://api.artic.edu/api/v1/artworks?fields=title,id,artist_title,description,image_id,artist_id&page=\(page)"
         case .getArtist(let id): return "https://api.artic.edu/api/v1/artists/\(id)"
         }
     }
 }
 
 protocol ArtworkService: AnyObject {
-    func getArtworksByPage(_ page: Int) async throws -> Artwork
+    func getArtworksByPage(_ page: Int) async throws -> ArtworkResponse
     func getArtistData(_ artistId: Int) async throws -> Artist
 }
 
 final class ArtworkServiceImpl: ArtworkService {
+    
+    private var artistCache = Cache<Int, Artist>.retrieveFromDiskIfPossible(.artist)
+    private var artworkCache = Cache<Int, ArtworkResponse>.retrieveFromDiskIfPossible(.artwork)
+
     func getArtistData(_ artistId: Int) async throws -> Artist {
-        try await request(.getArtist(artistId))
+        if let cachedArtist = artistCache[artistId] { return cachedArtist }
+        
+        do {
+            let artist: Artist = try await request(.getArtist(artistId))
+            artistCache[artistId] = artist
+            try artistCache.saveToDisk(withName: .artist)
+            return artist
+        } catch let error {
+            throw error
+        }
     }
     
-    func getArtworksByPage(_ page: Int) async throws -> Artwork {
-        try await request(.getArtworks(page))
+    func getArtworksByPage(_ page: Int) async throws -> ArtworkResponse {
+        if let cachedArtwork = artworkCache[page] {
+            return cachedArtwork
+        }
+        
+        do {
+            let response: ArtworkResponse = try await request(.getArtworks(page))
+            // For the artwork array the cache strategy uses the page as the key
+            artworkCache[page] = response
+            try artworkCache.saveToDisk(withName: .artwork)
+            return response
+        } catch let error { throw error }
     }
     
     private func request<T: Decodable>(_ url: ArtworkApi) async throws -> T {

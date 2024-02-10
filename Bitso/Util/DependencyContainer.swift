@@ -6,9 +6,10 @@
 //
 
 import Factory
+import Foundation
 
 extension Container {
     var artworkService: Factory<ArtworkService> {
-        Factory(self) { ArtworkServiceImpl() }
+        Factory(self) { ArtworkServiceImpl() }.scope(.shared)
     }
 }

@@ -18,7 +18,7 @@ final class ArtworkListViewModel: ViewModel {
     private var currentPage: Pagination = .initial()
     
     // MARK: Public
-    @Published var artwork: Artwork = Artwork(data: [])
+    @Published var artwork: ArtworkResponse = ArtworkResponse(data: [])
     @Published var state: State = .initial
     
     func send(action: Action) {

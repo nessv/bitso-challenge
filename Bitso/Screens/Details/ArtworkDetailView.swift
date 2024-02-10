@@ -10,7 +10,7 @@ import SwiftUI
 struct ArtworkDetailView: View {
     @StateObject private var viewModel: ArtworkDetailViewModel
     
-    init(artwork: Artwork.Data) {
+    init(artwork: Artwork) {
         _viewModel = StateObject(wrappedValue: ArtworkDetailViewModel(artwork: artwork))
     }
     

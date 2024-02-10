@@ -7,28 +7,28 @@
 
 import Foundation
 
-struct Artwork: Codable {
+struct ArtworkResponse: Codable {
     var pagination: Pagination?
-    var data: [Data] = []
+    var data: [Artwork] = []
+}
+
+struct Artwork: Codable {
+    let id: Int
+    let title: String
+    let thumbnail: Thumbnail?
+    let artistTitle: String?
+    let description: String?
+    let imageId: String?
+    let artistId: Int?
     
-    struct Data: Codable {
-        let id: Int
-        let title: String
-        let thumbnail: Thumbnail?
-        let artistTitle: String?
-        let description: String?
-        let imageId: String?
-        let artistId: Int?
-        
-        enum CodingKeys: String, CodingKey {
-            case id
-            case title
-            case thumbnail
-            case artistTitle = "artist_title"
-            case description
-            case imageId = "image_id"
-            case artistId = "artist_id"
-        }
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case thumbnail
+        case artistTitle = "artist_title"
+        case description
+        case imageId = "image_id"
+        case artistId = "artist_id"
     }
 }
 

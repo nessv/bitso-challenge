@@ -13,11 +13,11 @@ final class ArtworkDetailViewModel: ViewModel {
     enum State { case initial, loadingArtistInfo, loaded(_ artist: Artist), errorLoadingArtistInfo, artistInfoEmpty }
     
     @Published var state: State = .initial
-    @Published var artwork: Artwork.Data
+    @Published var artwork: Artwork
     
     @Injected(\.artworkService) private var service
     
-    init(artwork: Artwork.Data) {
+    init(artwork: Artwork) {
         self.artwork = artwork
     }
     

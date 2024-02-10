@@ -38,6 +38,10 @@ struct ArtworkListView: View {
                             .onAppear { viewModel.send(action: .loadMoreArtwork(art.id)) }
                     }
                 }
+                
+                if case .loading = viewModel.state {
+                    ProgressView()
+                }
             }
             .padding(16)
         }

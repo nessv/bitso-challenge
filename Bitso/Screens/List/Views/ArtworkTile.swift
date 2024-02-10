@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ArtworkTile: View {
-    var art: Artwork.Data
+    var art: Artwork
     
     var body: some View {
         HStack(alignment: .center) {
