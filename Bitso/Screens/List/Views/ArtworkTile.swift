@@ -12,13 +12,8 @@ struct ArtworkTile: View {
     
     var body: some View {
         HStack(alignment: .center) {
-            AsyncImage(url: URL(string: "https://www.artic.edu/iiif/2/\(art.imageId ?? "")/full/843,/0/default.jpg")) { image in
-                image.resizable()
-            } placeholder: {
-                Rectangle()
-                    .fill(Color.gray.opacity(0.2))
-            }
-            .frame(width: 100, height: 100)
+            CustomImageView(resourceId: art.imageId)
+                .frame(width: 100, height: 100)
             
             VStack(alignment: .leading, spacing: 4) {
                 Text(art.title)

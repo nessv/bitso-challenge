@@ -14,14 +14,16 @@ enum NetworkError: Error {
     case invalidServerResponse
 }
 
-private enum ArtworkApi {
+enum ArtworkApi {
     case getArtworks(_ page: Int)
     case getArtist(_ id: Int)
+    case image(_ resourceId: String)
     
     var url: String {
         switch self {
         case .getArtworks(let page): return "https://api.artic.edu/api/v1/artworks?fields=title,id,artist_title,description,image_id,artist_id&page=\(page)"
         case .getArtist(let id): return "https://api.artic.edu/api/v1/artists/\(id)"
+        case .image(let resourceId): return "https://www.artic.edu/iiif/2/\(resourceId)/full/843,/0/default.jpg"
         }
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		549105042B77D1A4001A8A5B /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 549105032B77D1A4001A8A5B /* Nuke */; };
+		549105062B77D1A4001A8A5B /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 549105052B77D1A4001A8A5B /* NukeExtensions */; };
+		549105082B77D1A4001A8A5B /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 549105072B77D1A4001A8A5B /* NukeUI */; };
+		5491050B2B77D2FE001A8A5B /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491050A2B77D2FE001A8A5B /* CustomImageView.swift */; };
 		54A5D3522B72D4F800F88FB0 /* BitsoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */; };
 		54A5D3542B72D4F800F88FB0 /* ArtworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */; };
 		54A5D3562B72D4F900F88FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3552B72D4F900F88FB0 /* Assets.xcassets */; };
@@ -51,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5491050A2B77D2FE001A8A5B /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		54A5D34E2B72D4F800F88FB0 /* Bitso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoApp.swift; sourceTree = "<group>"; };
 		54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkListView.swift; sourceTree = "<group>"; };
@@ -86,6 +91,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				54A5D37F2B72D5E500F88FB0 /* Factory in Frameworks */,
+				549105042B77D1A4001A8A5B /* Nuke in Frameworks */,
+				549105062B77D1A4001A8A5B /* NukeExtensions in Frameworks */,
+				549105082B77D1A4001A8A5B /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		549105092B77D2DD001A8A5B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5491050A2B77D2FE001A8A5B /* CustomImageView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		54A5D3452B72D4F800F88FB0 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +204,7 @@
 		54A5D3892B72DA6100F88FB0 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				549105092B77D2DD001A8A5B /* UI */,
 				54A5D38A2B72DA6D00F88FB0 /* DependencyContainer.swift */,
 				54A5D3912B72EEEB00F88FB0 /* String+Extension.swift */,
 				54A5D3962B73CA9600F88FB0 /* ViewModelProtocol.swift */,
@@ -269,6 +286,9 @@
 			name = Bitso;
 			packageProductDependencies = (
 				54A5D37E2B72D5E500F88FB0 /* Factory */,
+				549105032B77D1A4001A8A5B /* Nuke */,
+				549105052B77D1A4001A8A5B /* NukeExtensions */,
+				549105072B77D1A4001A8A5B /* NukeUI */,
 			);
 			productName = Bitso;
 			productReference = 54A5D34E2B72D4F800F88FB0 /* Bitso.app */;
@@ -344,6 +364,7 @@
 			mainGroup = 54A5D3452B72D4F800F88FB0;
 			packageReferences = (
 				54A5D37D2B72D5E500F88FB0 /* XCRemoteSwiftPackageReference "Factory" */,
+				549105022B77D1A4001A8A5B /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = 54A5D34F2B72D4F800F88FB0 /* Products */;
 			projectDirPath = "";
@@ -395,6 +416,7 @@
 				54A5D3862B72D8B300F88FB0 /* ArtworkResponse.swift in Sources */,
 				54A5D3922B72EEEB00F88FB0 /* String+Extension.swift in Sources */,
 				54A5D38B2B72DA6D00F88FB0 /* DependencyContainer.swift in Sources */,
+				5491050B2B77D2FE001A8A5B /* CustomImageView.swift in Sources */,
 				54A5D3542B72D4F800F88FB0 /* ArtworkListView.swift in Sources */,
 				54A5D3952B73C9F700F88FB0 /* ArtworkTile.swift in Sources */,
 				54A5D3902B72DB3E00F88FB0 /* ArtworkListViewModel.swift in Sources */,
@@ -738,6 +760,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		549105022B77D1A4001A8A5B /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.3.0;
+			};
+		};
 		54A5D37D2B72D5E500F88FB0 /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Factory";
@@ -749,6 +779,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		549105032B77D1A4001A8A5B /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 549105022B77D1A4001A8A5B /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		549105052B77D1A4001A8A5B /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 549105022B77D1A4001A8A5B /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		549105072B77D1A4001A8A5B /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 549105022B77D1A4001A8A5B /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
 		54A5D37E2B72D5E500F88FB0 /* Factory */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 54A5D37D2B72D5E500F88FB0 /* XCRemoteSwiftPackageReference "Factory" */;

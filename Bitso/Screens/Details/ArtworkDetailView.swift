@@ -17,14 +17,9 @@ struct ArtworkDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
-                AsyncImage(url: URL(string: "https://www.artic.edu/iiif/2/\(viewModel.artwork.imageId ?? "")/full/843,/0/default.jpg")) { image in
-                    image.resizable()
-                } placeholder: {
-                    Rectangle()
-                        .fill(Color.gray.opacity(0.2))
-                }
-                .frame(height: 200)
-                .clipShape(.rect(cornerRadius: 16))
+                CustomImageView(resourceId: viewModel.artwork.imageId)
+                    .frame(height: 200)
+                    .clipShape(.rect(cornerRadius: 16))
                 
                 if let description = viewModel.artwork.description {
                     Text(description.stripHTML)
@@ -32,13 +27,12 @@ struct ArtworkDetailView: View {
                         .foregroundStyle(.gray)
                 }
                 
-                
                 artistInfo
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
             }
             .padding(.horizontal, 24)
         }
-        .navigationTitle(viewModel.artwork.title)
+        .navigationTitle("Artwork & Artist")
         .onAppear { viewModel.send(action: .loadArtistInfo) }
     }
     
