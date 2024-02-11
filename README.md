@@ -28,4 +28,5 @@ There are test coverage in place for:
 ## TODO
 There are still some points worth fixing
 * Better cache strategy: Even though the cache works as expected, since there is no "expiration date", and the artworks endpoint it's constantly getting updated, it can happen that the cache response becomes very outdated.
-  * Solution: Add a network-check to determine if at app start there's internet connection, if so then just rely on that to fetch the most up-to-date data and just otherwise and, while the app is in use, rely on the cache. 
+  * Solution 1: Add a network-check to determine if at app start there's internet connection, if so then just rely on that to fetch the most up-to-date data and just otherwise and, while the app is in use, rely on the cache.
+  * Solution 2: Add an expiration date to the cache's `Entry` object. This will determine if the data is already to old and, in that case, fetch new data from the internet. This can still be a problem if the data is old and the device has no internet connection, in that case we can fallback to use the data anyways.
