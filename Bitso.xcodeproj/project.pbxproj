@@ -25,6 +25,11 @@
 		549105302B794780001A8A5B /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491052F2B794780001A8A5B /* Entry.swift */; };
 		549105322B7947EA001A8A5B /* KeyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549105312B7947EA001A8A5B /* KeyTracker.swift */; };
 		549105342B794822001A8A5B /* WrappedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549105332B794822001A8A5B /* WrappedKey.swift */; };
+		549105372B794F87001A8A5B /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 549105362B794F87001A8A5B /* InlineSnapshotTesting */; };
+		549105392B794F87001A8A5B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 549105382B794F87001A8A5B /* SnapshotTesting */; };
+		5491053B2B794FBA001A8A5B /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491053A2B794FBA001A8A5B /* SnapshotTests.swift */; };
+		549105452B79521A001A8A5B /* loading.artwork_list_loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 549105432B79521A001A8A5B /* loading.artwork_list_loading.png */; };
+		549105462B79521A001A8A5B /* loaded.artwork_list_loaded.png in Resources */ = {isa = PBXBuildFile; fileRef = 549105442B79521A001A8A5B /* loaded.artwork_list_loaded.png */; };
 		54A5D3522B72D4F800F88FB0 /* BitsoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */; };
 		54A5D3542B72D4F800F88FB0 /* ArtworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */; };
 		54A5D3562B72D4F900F88FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3552B72D4F900F88FB0 /* Assets.xcassets */; };
@@ -84,6 +89,9 @@
 		5491052F2B794780001A8A5B /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		549105312B7947EA001A8A5B /* KeyTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyTracker.swift; sourceTree = "<group>"; };
 		549105332B794822001A8A5B /* WrappedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedKey.swift; sourceTree = "<group>"; };
+		5491053A2B794FBA001A8A5B /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
+		549105432B79521A001A8A5B /* loading.artwork_list_loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.artwork_list_loading.png; path = __Snapshots__/SnapshotTests/loading.artwork_list_loading.png; sourceTree = "<group>"; };
+		549105442B79521A001A8A5B /* loaded.artwork_list_loaded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loaded.artwork_list_loaded.png; path = __Snapshots__/SnapshotTests/loaded.artwork_list_loaded.png; sourceTree = "<group>"; };
 		54A5D34E2B72D4F800F88FB0 /* Bitso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoApp.swift; sourceTree = "<group>"; };
 		54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkListView.swift; sourceTree = "<group>"; };
@@ -129,6 +137,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549105372B794F87001A8A5B /* InlineSnapshotTesting in Frameworks */,
+				549105392B794F87001A8A5B /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +191,7 @@
 		549105292B79161E001A8A5B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5491053E2B79508B001A8A5B /* Snapshots */,
 				54A5D3622B72D4F900F88FB0 /* FormatingTests.swift */,
 				5491050C2B77EA9A001A8A5B /* CacheTests.swift */,
 				549105272B77FE2E001A8A5B /* ArtworkVMTests.swift */,
@@ -197,6 +208,16 @@
 				5491052A2B791644001A8A5B /* XCTestCase+Extension.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		5491053E2B79508B001A8A5B /* Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				549105442B79521A001A8A5B /* loaded.artwork_list_loaded.png */,
+				549105432B79521A001A8A5B /* loading.artwork_list_loading.png */,
+				5491053A2B794FBA001A8A5B /* SnapshotTests.swift */,
+			);
+			path = Snapshots;
 			sourceTree = "<group>";
 		};
 		54A5D3452B72D4F800F88FB0 = {
@@ -382,6 +403,10 @@
 				54A5D3602B72D4F900F88FB0 /* PBXTargetDependency */,
 			);
 			name = BitsoTests;
+			packageProductDependencies = (
+				549105362B794F87001A8A5B /* InlineSnapshotTesting */,
+				549105382B794F87001A8A5B /* SnapshotTesting */,
+			);
 			productName = BitsoTests;
 			productReference = 54A5D35E2B72D4F900F88FB0 /* BitsoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -439,6 +464,7 @@
 			packageReferences = (
 				54A5D37D2B72D5E500F88FB0 /* XCRemoteSwiftPackageReference "Factory" */,
 				549105022B77D1A4001A8A5B /* XCRemoteSwiftPackageReference "Nuke" */,
+				549105352B794F87001A8A5B /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 54A5D34F2B72D4F800F88FB0 /* Products */;
 			projectDirPath = "";
@@ -470,8 +496,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5491051A2B77F878001A8A5B /* artwork_response_page_1.json in Resources */,
+				549105462B79521A001A8A5B /* loaded.artwork_list_loaded.png in Resources */,
 				549105192B77F878001A8A5B /* artwork_response_page_2.json in Resources */,
 				549105182B77F878001A8A5B /* artist_response_37279.json in Resources */,
+				549105452B79521A001A8A5B /* loading.artwork_list_loading.png in Resources */,
 				549105172B77F878001A8A5B /* artist_response_35363.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5491050D2B77EA9A001A8A5B /* CacheTests.swift in Sources */,
+				5491053B2B794FBA001A8A5B /* SnapshotTests.swift in Sources */,
 				549105262B77FDF5001A8A5B /* TestError.swift in Sources */,
 				54A5D3632B72D4F900F88FB0 /* FormatingTests.swift in Sources */,
 				5491052E2B79167A001A8A5B /* ArtworkDetailTests.swift in Sources */,
@@ -856,6 +885,14 @@
 				minimumVersion = 12.3.0;
 			};
 		};
+		549105352B794F87001A8A5B /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.3;
+			};
+		};
 		54A5D37D2B72D5E500F88FB0 /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Factory";
@@ -881,6 +918,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 549105022B77D1A4001A8A5B /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeUI;
+		};
+		549105362B794F87001A8A5B /* InlineSnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 549105352B794F87001A8A5B /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = InlineSnapshotTesting;
+		};
+		549105382B794F87001A8A5B /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 549105352B794F87001A8A5B /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 		54A5D37E2B72D5E500F88FB0 /* Factory */ = {
 			isa = XCSwiftPackageProductDependency;

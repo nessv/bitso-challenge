@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ArtworkListView: View {
-    @StateObject var viewModel = ArtworkListViewModel()
+    @StateObject var viewModel: ArtworkListViewModel
     
-    init() {
+    init(viewModel: ArtworkListViewModel = .init()) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
         // Necessary to apply the same font style to the navigation bar title
         UINavigationBar.appearance().largeTitleTextAttributes = [.font: UIFont(name: FuturaRound.bold.font, size: FontStyle.largeTitle.size) as Any]
         UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(name: FuturaRound.medium.font, size: FontStyle.title3.size) as Any]
