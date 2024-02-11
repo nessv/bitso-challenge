@@ -15,11 +15,11 @@ struct ArtworkResponse: Codable {
 struct Artwork: Codable {
     let id: Int
     let title: String
-    let thumbnail: Thumbnail?
-    let artistTitle: String?
-    let description: String?
-    let imageId: String?
-    let artistId: Int?
+    var thumbnail: Thumbnail?
+    var artistTitle: String?
+    var description: String?
+    var imageId: String?
+    var artistId: Int?
     
     enum CodingKeys: String, CodingKey {
         case id

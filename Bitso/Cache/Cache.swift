@@ -10,6 +10,8 @@ import Foundation
 enum CachedContent: String {
     case artist
     case artwork
+    // FOR TESTING PURPOSES ONLY
+    case test
 }
 
 final class Cache<Key: Hashable, Value: Decodable> {

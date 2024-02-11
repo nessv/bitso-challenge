@@ -10,7 +10,29 @@ import Factory
 
 final class ArtworkDetailViewModel: ViewModel {
     enum Action { case loadArtistInfo }
-    enum State { case initial, loadingArtistInfo, loaded(_ artist: Artist), errorLoadingArtistInfo, artistInfoEmpty }
+    enum State: Equatable {
+        
+        static func == (lhs: State, rhs: State) -> Bool {
+            switch (lhs, rhs) {
+            case (.loaded(let lhsData), .loaded(let rhsData)):
+                return lhsData.data.id == rhsData.data.id
+                // TRUE CASES
+            case (.initial, .initial),
+                (.loadingArtistInfo, .loadingArtistInfo),
+                (.errorLoadingArtistInfo, .errorLoadingArtistInfo),
+                (.artistInfoEmpty, .artistInfoEmpty)
+                : return true
+                // FALSE CASES
+            default: return false
+            }
+        }
+        
+        case initial
+        case loadingArtistInfo
+        case loaded(_ artist: Artist)
+        case errorLoadingArtistInfo
+        case artistInfoEmpty
+    }
     
     @Published var state: State = .initial
     @Published var artwork: Artwork

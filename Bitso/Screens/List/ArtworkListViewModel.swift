@@ -15,7 +15,7 @@ final class ArtworkListViewModel: ViewModel {
     enum State { case initial, loading, loaded, error }
     
     // MARK: Infinite scrolling
-    private var currentPage: Pagination = .initial()
+    private(set) var currentPage: Pagination = .initial()
     
     // MARK: Public
     @Published var artwork: ArtworkResponse = ArtworkResponse(data: [])
@@ -73,6 +73,6 @@ final class ArtworkListViewModel: ViewModel {
         // Set state back to initial
         state = .initial
         // Trigger artwork fetch
-//        getArtwork()
+        getArtwork()
     }
 }

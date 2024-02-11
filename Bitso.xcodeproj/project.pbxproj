@@ -11,11 +11,22 @@
 		549105062B77D1A4001A8A5B /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 549105052B77D1A4001A8A5B /* NukeExtensions */; };
 		549105082B77D1A4001A8A5B /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 549105072B77D1A4001A8A5B /* NukeUI */; };
 		5491050B2B77D2FE001A8A5B /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491050A2B77D2FE001A8A5B /* CustomImageView.swift */; };
+		5491050D2B77EA9A001A8A5B /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491050C2B77EA9A001A8A5B /* CacheTests.swift */; };
+		549105172B77F878001A8A5B /* artist_response_35363.json in Resources */ = {isa = PBXBuildFile; fileRef = 549105132B77F878001A8A5B /* artist_response_35363.json */; };
+		549105182B77F878001A8A5B /* artist_response_37279.json in Resources */ = {isa = PBXBuildFile; fileRef = 549105142B77F878001A8A5B /* artist_response_37279.json */; };
+		549105192B77F878001A8A5B /* artwork_response_page_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 549105152B77F878001A8A5B /* artwork_response_page_2.json */; };
+		5491051A2B77F878001A8A5B /* artwork_response_page_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 549105162B77F878001A8A5B /* artwork_response_page_1.json */; };
+		549105202B77F9D6001A8A5B /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491051F2B77F9D6001A8A5B /* MockService.swift */; };
+		549105242B77FDE1001A8A5B /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549105232B77FDE1001A8A5B /* Bundle+Extension.swift */; };
+		549105262B77FDF5001A8A5B /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549105252B77FDF5001A8A5B /* TestError.swift */; };
+		549105282B77FE2E001A8A5B /* ArtworkVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549105272B77FE2E001A8A5B /* ArtworkVMTests.swift */; };
+		5491052B2B791644001A8A5B /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491052A2B791644001A8A5B /* XCTestCase+Extension.swift */; };
+		5491052E2B79167A001A8A5B /* ArtworkDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491052D2B79167A001A8A5B /* ArtworkDetailTests.swift */; };
 		54A5D3522B72D4F800F88FB0 /* BitsoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */; };
 		54A5D3542B72D4F800F88FB0 /* ArtworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */; };
 		54A5D3562B72D4F900F88FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3552B72D4F900F88FB0 /* Assets.xcassets */; };
 		54A5D3592B72D4F900F88FB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3582B72D4F900F88FB0 /* Preview Assets.xcassets */; };
-		54A5D3632B72D4F900F88FB0 /* BitsoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3622B72D4F900F88FB0 /* BitsoTests.swift */; };
+		54A5D3632B72D4F900F88FB0 /* FormatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3622B72D4F900F88FB0 /* FormatingTests.swift */; };
 		54A5D36D2B72D4F900F88FB0 /* BitsoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D36C2B72D4F900F88FB0 /* BitsoUITests.swift */; };
 		54A5D36F2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D36E2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift */; };
 		54A5D37F2B72D5E500F88FB0 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 54A5D37E2B72D5E500F88FB0 /* Factory */; };
@@ -56,13 +67,24 @@
 
 /* Begin PBXFileReference section */
 		5491050A2B77D2FE001A8A5B /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		5491050C2B77EA9A001A8A5B /* CacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
+		549105132B77F878001A8A5B /* artist_response_35363.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artist_response_35363.json; sourceTree = "<group>"; };
+		549105142B77F878001A8A5B /* artist_response_37279.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artist_response_37279.json; sourceTree = "<group>"; };
+		549105152B77F878001A8A5B /* artwork_response_page_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artwork_response_page_2.json; sourceTree = "<group>"; };
+		549105162B77F878001A8A5B /* artwork_response_page_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artwork_response_page_1.json; sourceTree = "<group>"; };
+		5491051F2B77F9D6001A8A5B /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		549105232B77FDE1001A8A5B /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		549105252B77FDF5001A8A5B /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		549105272B77FE2E001A8A5B /* ArtworkVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkVMTests.swift; sourceTree = "<group>"; };
+		5491052A2B791644001A8A5B /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
+		5491052D2B79167A001A8A5B /* ArtworkDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkDetailTests.swift; sourceTree = "<group>"; };
 		54A5D34E2B72D4F800F88FB0 /* Bitso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoApp.swift; sourceTree = "<group>"; };
 		54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkListView.swift; sourceTree = "<group>"; };
 		54A5D3552B72D4F900F88FB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54A5D3582B72D4F900F88FB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		54A5D35E2B72D4F900F88FB0 /* BitsoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54A5D3622B72D4F900F88FB0 /* BitsoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoTests.swift; sourceTree = "<group>"; };
+		54A5D3622B72D4F900F88FB0 /* FormatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatingTests.swift; sourceTree = "<group>"; };
 		54A5D3682B72D4F900F88FB0 /* BitsoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A5D36C2B72D4F900F88FB0 /* BitsoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoUITests.swift; sourceTree = "<group>"; };
 		54A5D36E2B72D4F900F88FB0 /* BitsoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -122,6 +144,55 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		5491050E2B77EBDB001A8A5B /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				5491051C2B77F882001A8A5B /* Artist */,
+				5491051B2B77F87C001A8A5B /* Artwork */,
+				5491051F2B77F9D6001A8A5B /* MockService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		5491051B2B77F87C001A8A5B /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				549105152B77F878001A8A5B /* artwork_response_page_2.json */,
+				549105162B77F878001A8A5B /* artwork_response_page_1.json */,
+			);
+			path = Artwork;
+			sourceTree = "<group>";
+		};
+		5491051C2B77F882001A8A5B /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				549105132B77F878001A8A5B /* artist_response_35363.json */,
+				549105142B77F878001A8A5B /* artist_response_37279.json */,
+			);
+			path = Artist;
+			sourceTree = "<group>";
+		};
+		549105292B79161E001A8A5B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				54A5D3622B72D4F900F88FB0 /* FormatingTests.swift */,
+				5491050C2B77EA9A001A8A5B /* CacheTests.swift */,
+				549105272B77FE2E001A8A5B /* ArtworkVMTests.swift */,
+				5491052D2B79167A001A8A5B /* ArtworkDetailTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5491052C2B791658001A8A5B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				549105232B77FDE1001A8A5B /* Bundle+Extension.swift */,
+				549105252B77FDF5001A8A5B /* TestError.swift */,
+				5491052A2B791644001A8A5B /* XCTestCase+Extension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		54A5D3452B72D4F800F88FB0 = {
 			isa = PBXGroup;
 			children = (
@@ -145,13 +216,13 @@
 		54A5D3502B72D4F800F88FB0 /* Bitso */ = {
 			isa = PBXGroup;
 			children = (
-				54A5D3B82B75883400F88FB0 /* Cache */,
 				54A5D3A52B7422F700F88FB0 /* Info.plist */,
-				54A5D39C2B74227600F88FB0 /* Font */,
 				54A5D38C2B72DB1F00F88FB0 /* Screens */,
 				54A5D3832B72D8A100F88FB0 /* Service */,
 				54A5D3842B72D8A900F88FB0 /* Model */,
 				54A5D3892B72DA6100F88FB0 /* Util */,
+				54A5D39C2B74227600F88FB0 /* Font */,
+				54A5D3B82B75883400F88FB0 /* Cache */,
 				54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */,
 				54A5D3552B72D4F900F88FB0 /* Assets.xcassets */,
 				54A5D3572B72D4F900F88FB0 /* Preview Content */,
@@ -170,7 +241,9 @@
 		54A5D3612B72D4F900F88FB0 /* BitsoTests */ = {
 			isa = PBXGroup;
 			children = (
-				54A5D3622B72D4F900F88FB0 /* BitsoTests.swift */,
+				5491052C2B791658001A8A5B /* Util */,
+				549105292B79161E001A8A5B /* Tests */,
+				5491050E2B77EBDB001A8A5B /* Mock */,
 			);
 			path = BitsoTests;
 			sourceTree = "<group>";
@@ -225,7 +298,8 @@
 		54A5D38D2B72DB2E00F88FB0 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				54A5D3932B73C9E600F88FB0 /* Views */,
+				54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */,
+				54A5D3942B73C9F700F88FB0 /* ArtworkTile.swift */,
 				54A5D38F2B72DB3E00F88FB0 /* ArtworkListViewModel.swift */,
 			);
 			path = List;
@@ -238,15 +312,6 @@
 				54A5D3B12B752BA400F88FB0 /* ArtworkDetailViewModel.swift */,
 			);
 			path = Details;
-			sourceTree = "<group>";
-		};
-		54A5D3932B73C9E600F88FB0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */,
-				54A5D3942B73C9F700F88FB0 /* ArtworkTile.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		54A5D39C2B74227600F88FB0 /* Font */ = {
@@ -395,6 +460,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5491051A2B77F878001A8A5B /* artwork_response_page_1.json in Resources */,
+				549105192B77F878001A8A5B /* artwork_response_page_2.json in Resources */,
+				549105182B77F878001A8A5B /* artist_response_37279.json in Resources */,
+				549105172B77F878001A8A5B /* artist_response_35363.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +503,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54A5D3632B72D4F900F88FB0 /* BitsoTests.swift in Sources */,
+				5491050D2B77EA9A001A8A5B /* CacheTests.swift in Sources */,
+				549105262B77FDF5001A8A5B /* TestError.swift in Sources */,
+				54A5D3632B72D4F900F88FB0 /* FormatingTests.swift in Sources */,
+				5491052E2B79167A001A8A5B /* ArtworkDetailTests.swift in Sources */,
+				549105202B77F9D6001A8A5B /* MockService.swift in Sources */,
+				549105242B77FDE1001A8A5B /* Bundle+Extension.swift in Sources */,
+				5491052B2B791644001A8A5B /* XCTestCase+Extension.swift in Sources */,
+				549105282B77FE2E001A8A5B /* ArtworkVMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

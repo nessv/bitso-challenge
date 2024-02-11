@@ -1,0 +1,56 @@
+{
+	"data": {
+		"id": 35363,
+		"api_model": "agents",
+		"api_link": "https:\/\/api.artic.edu\/api\/v1\/agents\/35363",
+		"title": "Fernand Léger",
+		"sort_title": "Léger, Fernand",
+		"alt_titles": [
+			"Fernan Lezeh",
+			"Fernan Lezeh"
+		],
+		"is_artist": true,
+		"birth_date": 1881,
+		"death_date": 1955,
+		"description": null,
+		"ulan_id": null,
+		"suggest_autocomplete_boosted": {
+			"input": [
+				"Fernand Léger",
+				"Léger, Fernand",
+				"Fernan Lezeh",
+				"Fernan Lezeh"
+			],
+			"weight": 3
+		},
+		"suggest_autocomplete_all": {
+			"input": [
+				"Fernand Léger",
+				"Léger, Fernand",
+				"Fernan Lezeh",
+				"Fernan Lezeh"
+			],
+			"weight": 3,
+			"contexts": {
+				"groupings": [
+					"title"
+				]
+			}
+		},
+		"source_updated_at": "1976-09-02T11:20:00-05:00",
+		"updated_at": "2022-04-22T10:57:38-05:00",
+		"timestamp": "2024-02-08T10:14:30-06:00"
+	},
+	"info": {
+		"license_text": "The data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+		"license_links": [
+			"https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+			"https:\/\/www.artic.edu\/terms"
+		],
+		"version": "1.10"
+	},
+	"config": {
+		"iiif_url": "https:\/\/www.artic.edu\/iiif\/2",
+		"website_url": "http:\/\/www.artic.edu"
+	}
+}

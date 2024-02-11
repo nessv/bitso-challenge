@@ -1,0 +1,193 @@
+{
+	"pagination": {
+		"total": 124004,
+		"limit": 12,
+		"offset": 12,
+		"total_pages": 10334,
+		"current_page": 2,
+		"prev_url": "https:\/\/api.artic.edu\/api\/v1\/artworks?page=1&fields=title%2Cthumbnail%2Cid%2Cartist_title%2Cdescription%2Cimage_id%2Cartist_id",
+		"next_url": "https:\/\/api.artic.edu\/api\/v1\/artworks?page=3&fields=title%2Cthumbnail%2Cid%2Cartist_title%2Cdescription%2Cimage_id%2Cartist_id"
+	},
+	"data": [
+		{
+			"id": 25809,
+			"title": "Maquette for Richard J. Daley Center Sculpture",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBAAFAPQAAG9SQ3FSRHFWSnpfU3VlXXxpX4FgUYxwX4x5cJaBeIqMjIuMja2qqq+urr+1ssSxqMCzrMW7t9fV1Nzc3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURoFIQC3MAjZQgUyQEkDMYTwgAOw==",
+				"width": 5484,
+				"height": 7320,
+				"alt_text": "Thin, flat metal shapes form a loosely symmetrical sculpture atop a wide base. Near the top, radiating spindles form an open, cone-like shape."
+			},
+			"description": "<p>Chicago’s collection of public art was initiated on August 15, 1967, when Mayor Richard J. Daley dedicated an untitled sculpture commonly known as &quot;The Picasso&quot; in Chicago’s new Civic Center (now the Richard J. Daley Center). Just four years earlier, architect William Hartmann of Skidmore, Owings &amp; Merrill had approached Pablo Picasso with the commission. The artist accepted and crafted two steel maquettes; he kept one in his studio and gave the other to the architect to use in planning. The sculpture’s presence inspired private and public investment in more works for the cityscape over the years, including recent additions in nearby Millennium Park.<\/p>\n",
+			"artist_id": 36198,
+			"artist_title": "Pablo Picasso",
+			"image_id": "6d377b31-7429-8d65-b6c4-51b6345e878a"
+		},
+		{
+			"id": 30732,
+			"title": "The Shoe Shop",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBAAFAPQAACUiIjAlIEAzL0U4NU06MEhAOUpCP1VENFBHP1tJPVpKRndlVXZoXXdpX39uWnhpXXtsZHhwZ4l4apSIfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIONIh7I8yQBNjGBESAEERAgAOw==",
+				"width": 10055,
+				"height": 11890,
+				"alt_text": "A work made of oil on canvas."
+			},
+			"description": "<p>In 1911 the department store was a relatively new and important urban institution, and <em>The Shoe Shop<\/em> depicts the activities of female employees and their customers. Elizabeth Sparhawk-Jones rendered this modern subject in a rapid, painterly style, paying particular attention to effects of light and atmosphere. Her early work often represented women in the modern city: nursemaids at home, women strolling in the park, shoppers, and store clerks. Strongly influenced by artist William Merritt Chase, Sparhawk-Jones’s painting constitutes a highly personal vision that drew from both Realism and Impressionism.<\/p>\n",
+			"artist_id": 24597,
+			"artist_title": "Elizabeth Sparhawk-Jones",
+			"image_id": "96b2d860-a0f9-7965-9f90-f0a7c16aa427"
+		},
+		{
+			"id": 27987,
+			"title": "Jacques and Berthe Lipchitz",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhAwAFAPMAADAmJDEpJjYsKjcyMUg1KE5FPVxDNlNGPllDOFJORldNRVNRSkxTU2hPQWpkWQAAACH5BAAAAAAALAAAAAADAAUAAAQLsDlWVhqBAIPEUREAOw==",
+				"width": 9289,
+				"height": 13930,
+				"alt_text": "Large painting, standing man blue turtleneck, sitting woman with white collar."
+			},
+			"description": "<p>After receiving his artistic training in Italy, the sculptor and painter Amedeo Modigliani moved to Paris in 1906. Three years later, he helped pioneer a general migration of artists to the neighborhood of Montparnasse, which remained the center of avant-gard activity in the city until World War II. Scores of artists lived there, and many of them shared a Jewish heritage—including Modigliani and his friend the Lithuanian-born sculptor Jacques Lipchitz.<\/p>\n<p>Lipchitz commissioned Modigliani to paint this portrait on the occasion of his marriage to the Russian poet Berthe Kitrosser, as a way of helping his troubled friend financially. The double portrait is one of only three in the artist’s oeuvre and, according to Lipchitz, took two days to paint. Modigliani made about twenty drawings on the first day; the next day, he declared the picture finished. At the modest price of what Lipchitz remembered as “ten francs per sitting and a little alcohol,” however, he persuaded Modigliani to work on the portrait for another two weeks in an effort to provide more financial assistance to his friend. Despite Modigliani’s exceptional talent, his work found a market only after his death in 1920, which was hastened by tuberculosis and his legendary bohemian lifestyle.<\/p>\n",
+			"artist_id": 35801,
+			"artist_title": "Amedeo Modigliani",
+			"image_id": "7e649536-b186-c3f5-3e6d-0d22d5d798ef"
+		},
+		{
+			"id": 32587,
+			"title": "Toy",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBAAFAPQAAD46NkFJIlxBInl+bd\/IDePTWuHOZqmhorS0sOHSgsrFuMnHvcfGxcnJxOHi5ujn5+3r4PDu6unq8fLz\/QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIHM0zyIASDQEylQQkJQYTggAOw==",
+				"width": 5327,
+				"height": 6941,
+				"alt_text": "A work made of steel, paint, and plastic."
+			},
+			"description": "<p>John Chamberlain began to make abstract sculptures— both wall-mounted and freestanding—of painted, compressed automotive parts in the 1950s. Skillfully combining the vigorous gestures of Abstract Expressionism with the playful use of found materials and compositions of Dada and Surrealism, the artist took previously cast-off pieces of sheet metal and then crimped, bent, and cut the usually unyielding material into an imposing form. <em>Toy<\/em> is atypical in its incorporation of a Slip n’ Slide (a plastic waterslide first introduced in 1961); the work slyly suggests a classical relief and the motif of drapery.<\/p>\n",
+			"artist_id": 33912,
+			"artist_title": "John Angus Chamberlain",
+			"image_id": "1f3811eb-2b6a-1a7e-3404-0c19b76e5df1"
+		},
+		{
+			"id": 32349,
+			"title": "City",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBAAFAPQAAD93iTx2ijx5jD16jTGOqzKSrzCRsDeWtjmXsziatzqatj6ZtTyYtjybuD2cuT+cuD6fvEaZp0CcuUCfuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIDAIweI0zANNEqIkB2EUUQgAOw==",
+				"width": 4437,
+				"height": 5039,
+				"alt_text": "A blue canvas with the word \"City\" written at the center with the viscous quality of water. The background darkens along a gradient towards the top. The lower right corner is green."
+			},
+			"description": "<p>From his earliest experiences as a sign painter, Ed Ruscha retained an interest in the visual and conceptual tensions between text and image. By the late 1960s, the artist began using pointed, single words— chosen as much for their evocative power as for their phonetic qualities—as visual subjects in a variety of media. Between 1966 and 1969, Ruscha made a series of “liquid” or “wet” word paintings, in which the linguistic effect is made more palpable by the trompe l’oeil renderings of the words, which suggest that they have been created from water, oil, syrup, or another fluid.<\/p>\n",
+			"artist_id": 40791,
+			"artist_title": "Ed Ruscha",
+			"image_id": "a8fe598b-a83b-1cd4-e4fb-ffc63599f249"
+		},
+		{
+			"id": 41441,
+			"title": "Manhattan Dawn",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBAAFAPQAAL6tq8GysM23ss+7sMi5tsy6uc68ucm+vMrBuc\/AuM3EvdPAvtTEvc+\/wtK8wdbDwtDGwNXGwNLGxNjKxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURoCEMieQ8EdQsk3IUDBIARAgAOw==",
+				"width": 1803,
+				"height": 2250,
+				"alt_text": "A work made of oil on canvas."
+			},
+			"description": null,
+			"artist_id": 34470,
+			"artist_title": "Lyonel Feininger",
+			"image_id": "277a3134-d98a-3c5f-488d-4c92ef6fdd9a"
+		},
+		{
+			"id": 40351,
+			"title": "The Five Foxes",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBAAFAPQAAJ6diaenlKqplauqmLCvnbGwnbGwnrW0ore1o7i3pLu6qL28q7++rL++rcHArcHAsMTDssbFtMvJt8\/OvQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURoAQNilAYiNNMEUMEwPEsSQgAOw==",
+				"width": 2176,
+				"height": 3108,
+				"alt_text": "A work made of engraving on ivory laid paper."
+			},
+			"description": null,
+			"artist_id": 37116,
+			"artist_title": "Israhel van Meckenem, the younger",
+			"image_id": "248dbe62-484f-bf62-52ef-f2e999c3728b"
+		},
+		{
+			"id": 62371,
+			"title": "Madame Cezanne in a Yellow Chair",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBAAFAPQAAEk4OVFBQlxAQFtEQltUUlpeU1JZWmhORGtcRmVlX3NhXnFlXXtyXF9lZFNlaFlxc2tzb314YmV8f3F\/fQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAUR4ANNUrEkDiIABjMETXQoRAgAOw==",
+				"width": 9801,
+				"height": 12413,
+				"alt_text": "Painting of a placid-looking, light-skinned woman in a maroon dress, seated in a chair with yellow upholstery, hands folded."
+			},
+			"description": "<p>This portrait is one in a series of four Paul Cezanne made of his wife, Emélie-Hortense Fiquet, whom he met when she worked as an artist’s model. They had a son together in 1872 and married in 1886. Technical examination suggests that Cezanne traced this image, the second in the series, from the first portrait, which he made from life. In contrast to her masklike expression, Hortense’s hands are agitated, contorted by crisscrossing brushstrokes and the dark-blue outlines Cezanne used to sketch out the forms, which remain visible in the final work.<\/p>\n",
+			"artist_id": 40482,
+			"artist_title": "Paul Cezanne",
+			"image_id": "4822cd01-44ac-041a-36b8-c0542377b750"
+		},
+		{
+			"id": 61612,
+			"title": "Nude with a Pitcher",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBAAFAPQAAFRFOllJPWdPQWhVR2hXR29cTXFaTHdeTXpfTG9eUXZgT35hT3hlUIRpVoVrV45xW4x0XpJ3X5B3YZyAZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURIFQMx6IkjmBIT0BEDcBMSAgAOw==",
+				"width": 3576,
+				"height": 4401,
+				"alt_text": "A work made of oil on canvas."
+			},
+			"description": null,
+			"artist_id": 36198,
+			"artist_title": "Pablo Picasso",
+			"image_id": "aa7ac006-5b63-12aa-3ab7-705cc612aa0a"
+		},
+		{
+			"id": 65479,
+			"title": "Cottages with a Woman Working in the Middle Ground",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBwAFAPUAAHVuUnZuUoF8X4N8X4qHbYeKcpKOcpSPcZGPdpKQcpaSdJuWdZqVdpyWdJ2WdpKTepaVeZuYeZuYepqYe52bf6OdfZ6dgaGghKOkiaaqkK2vk6eznqu0nau2n6+2nam0oKy5pKO+sqe\/sQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAHAAUAAAYhQI2Hs+lkLhYMKCT6UAABQgHyQAwEh0XDwahEJJOEwhAEADs=",
+				"width": 2983,
+				"height": 2250,
+				"alt_text": "A work made of charcoal, reed pen and black ink, blue pastel, and white chalk on blue-gray laid paper."
+			},
+			"description": null,
+			"artist_id": 40610,
+			"artist_title": "Vincent van Gogh",
+			"image_id": "c60f377f-37e3-a5e5-6a49-2099fb475355"
+		},
+		{
+			"id": 62450,
+			"title": "Still Life with a Basket of Fruit and a Bunch of Asparagus",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBwAFAPUAABoDDxcAEBkCEBsEERwEER4HExwFFB4GFSQNEyMLFSQOFSsKEi8PFz0aGD8dGTghGj0iGjsfIEggHEUqJkgtJlQvIUwzI141JlU8LV9BMGdGLmpANWhKNXpNMW9QM2VQPoBaOoJdQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAHAAUAAAYhwIEAECgYDojHpRJhJBSSTYeyIDganAzkM9F4QCELJhMEADs=",
+				"width": 3000,
+				"height": 2161,
+				"alt_text": "Painting of a woven basket filled with various fruits, including plums and apricots, on a table against a dark background, with asparagus and peapods on the table at front."
+			},
+			"description": "<p>At a time when still life was emerging as a discrete subject (and not just an element of larger narrative works), this artist depicted fruit and vegetables arrayed on a simple tabletop with elegant clarity and naturalism. Louise Moillon trained first under her father and, from 1620, her stepfather. When she executed this still life at the young age of 20, she was already an accomplished painter.<\/p>\n<p>Women painters were not uncommon within the European tradition of the family workshop, which provided training, studio space, and clients for successive generations of artists. The system was one of few pro- fessional routes for women in a period when they could not legally take up a career.<\/p>\n",
+			"artist_id": 17526,
+			"artist_title": "Louise Moillon",
+			"image_id": "87d426ca-4537-1386-50bf-6c2d5a5d7d17"
+		},
+		{
+			"id": 73874,
+			"title": "Figure Study in Colors",
+			"thumbnail": {
+				"lqip": "data:image\/gif;base64,R0lGODlhBAAFAPQAAMXAt9HOxdXQyNbTy9fTy9jVzNrWztrXztvXztrXz9rYz9vYz93a0d3a0t\/d1OLf1+Lg2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURINI0xkEIxRIABZMMivNATQgAOw==",
+				"width": 2245,
+				"height": 2973,
+				"alt_text": "A work made of transfer lithograph from four stones on ivory wove proofing paper."
+			},
+			"description": null,
+			"artist_id": 37279,
+			"artist_title": "James McNeill Whistler",
+			"image_id": "1ebf3b8d-c88b-5189-0787-8198fb46a70e"
+		}
+	],
+	"info": {
+		"license_text": "The `description` field in this response is licensed under a Creative Commons Attribution 4.0 Generic License (CC-By) and the Terms and Conditions of artic.edu. All other data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+		"license_links": [
+			"https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+			"https:\/\/www.artic.edu\/terms"
+		],
+		"version": "1.10"
+	},
+	"config": {
+		"iiif_url": "https:\/\/www.artic.edu\/iiif\/2",
+		"website_url": "http:\/\/www.artic.edu"
+	}
+}
