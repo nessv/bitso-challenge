@@ -44,18 +44,14 @@ struct ArtworkDetailView: View {
         case .loadingArtistInfo:
             ProgressView()
         case .loaded(let artist):
-            VStack(alignment: .leading, spacing: 24) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Artist Information")
+                    .font(.custom(FuturaRound.medium.font, size: FontStyle.title1.size))
                 HStack(spacing: 16) {
-                    Circle()
-                        .frame(width: 50, height: 50)
-                    
                     VStack(alignment: .leading) {
                         Text(artist.data.title)
                             .font(.custom(FuturaRound.bold.font,
                                           size: FontStyle.headline.size))
-                        Text("Artist")
-                            .font(.custom(FuturaRound.light.font,
-                                          size: FontStyle.subheadline.size))
                     }
                 }
                 if let description = artist.data.description {

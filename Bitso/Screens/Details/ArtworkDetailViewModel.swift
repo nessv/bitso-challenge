@@ -61,14 +61,9 @@ final class ArtworkDetailViewModel: ViewModel {
             
             do {
                 let artist = try await service.getArtistData(id)
-                
-                await MainActor.run {
-                    state = .loaded(artist)
-                }
+                await MainActor.run { state = .loaded(artist) }
             } catch {
-                await MainActor.run {
-                    state = .errorLoadingArtistInfo
-                }
+                await MainActor.run { state = .errorLoadingArtistInfo }
             }
         }
     }
