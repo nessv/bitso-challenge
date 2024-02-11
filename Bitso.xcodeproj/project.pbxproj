@@ -22,6 +22,9 @@
 		549105282B77FE2E001A8A5B /* ArtworkVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549105272B77FE2E001A8A5B /* ArtworkVMTests.swift */; };
 		5491052B2B791644001A8A5B /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491052A2B791644001A8A5B /* XCTestCase+Extension.swift */; };
 		5491052E2B79167A001A8A5B /* ArtworkDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491052D2B79167A001A8A5B /* ArtworkDetailTests.swift */; };
+		549105302B794780001A8A5B /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491052F2B794780001A8A5B /* Entry.swift */; };
+		549105322B7947EA001A8A5B /* KeyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549105312B7947EA001A8A5B /* KeyTracker.swift */; };
+		549105342B794822001A8A5B /* WrappedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549105332B794822001A8A5B /* WrappedKey.swift */; };
 		54A5D3522B72D4F800F88FB0 /* BitsoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */; };
 		54A5D3542B72D4F800F88FB0 /* ArtworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */; };
 		54A5D3562B72D4F900F88FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A5D3552B72D4F900F88FB0 /* Assets.xcassets */; };
@@ -78,6 +81,9 @@
 		549105272B77FE2E001A8A5B /* ArtworkVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkVMTests.swift; sourceTree = "<group>"; };
 		5491052A2B791644001A8A5B /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
 		5491052D2B79167A001A8A5B /* ArtworkDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkDetailTests.swift; sourceTree = "<group>"; };
+		5491052F2B794780001A8A5B /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		549105312B7947EA001A8A5B /* KeyTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyTracker.swift; sourceTree = "<group>"; };
+		549105332B794822001A8A5B /* WrappedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedKey.swift; sourceTree = "<group>"; };
 		54A5D34E2B72D4F800F88FB0 /* Bitso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A5D3512B72D4F800F88FB0 /* BitsoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoApp.swift; sourceTree = "<group>"; };
 		54A5D3532B72D4F800F88FB0 /* ArtworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkListView.swift; sourceTree = "<group>"; };
@@ -329,6 +335,9 @@
 			isa = PBXGroup;
 			children = (
 				54A5D3B92B765BF700F88FB0 /* Cache.swift */,
+				5491052F2B794780001A8A5B /* Entry.swift */,
+				549105312B7947EA001A8A5B /* KeyTracker.swift */,
+				549105332B794822001A8A5B /* WrappedKey.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -489,11 +498,14 @@
 				54A5D3542B72D4F800F88FB0 /* ArtworkListView.swift in Sources */,
 				54A5D3952B73C9F700F88FB0 /* ArtworkTile.swift in Sources */,
 				54A5D3902B72DB3E00F88FB0 /* ArtworkListViewModel.swift in Sources */,
+				549105302B794780001A8A5B /* Entry.swift in Sources */,
 				54A5D3A92B742D3600F88FB0 /* Font+Extension.swift in Sources */,
 				54A5D3882B72D8E200F88FB0 /* ArtworkService.swift in Sources */,
+				549105342B794822001A8A5B /* WrappedKey.swift in Sources */,
 				54A5D3522B72D4F800F88FB0 /* BitsoApp.swift in Sources */,
 				54A5D3972B73CA9600F88FB0 /* ViewModelProtocol.swift in Sources */,
 				54A5D3B22B752BA400F88FB0 /* ArtworkDetailViewModel.swift in Sources */,
+				549105322B7947EA001A8A5B /* KeyTracker.swift in Sources */,
 				54A5D3B02B751D9300F88FB0 /* ArtworkDetailView.swift in Sources */,
 				54A5D3AB2B74328E00F88FB0 /* Artist.swift in Sources */,
 			);

@@ -35,8 +35,8 @@ protocol ArtworkService: AnyObject {
 
 final class ArtworkServiceImpl: ArtworkService {
     
-    private var artistCache = Cache<Int, Artist>.retrieveFromDiskIfPossible(.artist)
-    private var artworkCache = Cache<Int, ArtworkResponse>.retrieveFromDiskIfPossible(.artwork)
+    @Injected(\.artistCache) private var artistCache
+    @Injected(\.artworkCache) private var artworkCache
 
     func getArtistData(_ artistId: Int) async throws -> Artist {
         if let cachedArtist = artistCache[artistId] { return cachedArtist }

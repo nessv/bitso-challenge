@@ -12,4 +12,12 @@ extension Container {
     var artworkService: Factory<ArtworkService> {
         Factory(self) { ArtworkServiceImpl() }.scope(.shared)
     }
+    
+    var artworkCache: Factory<Cache<Int, ArtworkResponse>> {
+        Factory(self) { Cache.retrieveFromDiskIfPossible(.artwork) }
+    }
+    
+    var artistCache: Factory<Cache<Int, Artist>> {
+        Factory(self) { Cache.retrieveFromDiskIfPossible(.artist) }
+    }
 }
