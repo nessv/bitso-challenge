@@ -8,7 +8,9 @@
 import Foundation
 
 extension Cache {
-    final class Entry: NSObject {
+    // Since NSCache requires the use of Class Objects,
+    // our Entry needs to be a Class
+    final class Entry {
         let key: Key
         let value: Value
         

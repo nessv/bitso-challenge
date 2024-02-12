@@ -8,6 +8,9 @@
 import Foundation
 
 extension Cache {
+    // Since NSCache is only compatible with keys that
+    // are subclasses of NSObject, this wrapper allows us
+    // to use any Hashable key
     final class WrappedKey: NSObject {
         let key: Key
         

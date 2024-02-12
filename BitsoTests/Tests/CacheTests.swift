@@ -78,4 +78,20 @@ final class CacheTests: XCTestCase {
         XCTAssertTrue(cache1 == "One")
         XCTAssertTrue(cache2 == "Two")
     }
+    
+    func testClearCache() {
+        // Create a new instance of Cache
+        let cache = Cache<Int, String>()
+        // Store some values in our cache
+        cache[1] = "One"
+        cache[2] = "Two"
+        // Validate that both values are in the cache
+        if cache[1] == nil || cache[2] == nil { XCTFail() }
+        // Remove both values from our cache
+        cache.removeValue(forKey: 1)
+        cache.removeValue(forKey: 2)
+        
+        XCTAssertTrue(cache[1] == nil && cache[2] == nil)
+        
+    }
 }
