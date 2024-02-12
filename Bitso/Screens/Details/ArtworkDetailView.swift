@@ -52,6 +52,10 @@ struct ArtworkDetailView: View {
                         Text(artist.data.title)
                             .font(.custom(FuturaRound.bold.font,
                                           size: FontStyle.headline.size))
+                        
+                        Text(artist.data.date)
+                            .font(.custom(FuturaRound.light.font,
+                                          size: FontStyle.subheadline.size))
                     }
                 }
                 if let description = artist.data.description {

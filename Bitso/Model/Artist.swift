@@ -26,3 +26,12 @@ struct Artist: Codable {
         }
     }
 }
+
+extension Artist.Data {
+    var date: String {
+        let birthD = birthDate == nil ? "" : String(birthDate!)
+        let deathD = deathDate == nil ? "" : String(deathDate!)
+        
+        return birthD + " - " + deathD
+    }
+}

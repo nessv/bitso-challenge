@@ -30,4 +30,15 @@ final class FormatingTests: XCTestCase {
             XCTAssertEqual(item.stripHTML, resultStrings[index])
         }
     }
+    
+    func testArtistDate() {
+        let artist1 = Artist(data: .init(id: 123, title: "John Doe", birthDate: 1832, deathDate: 1900))
+        XCTAssertEqual(artist1.data.date, "1832 - 1900")
+        
+        let artist2 = Artist(data: .init(id: 123, title: "John Doe", birthDate: 1832, deathDate: nil))
+        XCTAssertEqual(artist2.data.date, "1832 - ")
+        
+        let artist3 = Artist(data: .init(id: 123, title: "John Doe", birthDate: nil, deathDate: 1900))
+        XCTAssertEqual(artist3.data.date, " - 1900")
+    }
 }
